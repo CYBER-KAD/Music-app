@@ -7,12 +7,12 @@ jQuery(document).ready(function() {
 	mute = $('#mute');
 	muted = $('#muted');
 	close = $('#close');
-	song = new Audio('music/track1.ogg','music/track1.mp3');
+	song = new Audio(' https://songwhip.com/song/lil-tecca/love-me','music/track1.mp3');
 	duration = song.duration;
 
 	if (song.canPlayType('audio/mpeg;')) {
     	song.type= 'audio/mpeg';
-    	song.src= 'music/track1.mp3';
+    	song.src= ' https://songwhip.com/song/lil-tecca/love-me';
 	} else {
     	song.type= 'audio/ogg';
     	song.src= 'music/track1.ogg';
